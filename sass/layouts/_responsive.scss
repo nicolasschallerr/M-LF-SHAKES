@@ -1,0 +1,44 @@
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .logo img {
+      width: 100px;
+    }
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-container h2 {
+    font-size: 2rem;
+  }
+
+  .text-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pedido-online {
+    padding: 40px 15px;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .btn-pedido {
+      font-size: 1rem;
+      padding: 12px 20px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.pedidos-online {
+  background: linear-gradient(135deg, $highlight-color, $secondary-color);
+  color: $background-color;
+  text-align: center;
+  padding: 60px;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: bounceIn 1s ease-out;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .btn-pedido {
+      background: $primary-color;
+      color: $background-color;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+  .imagen-pedido {
+    margin-top: 80px;
+
+    img {
+      width: 900px;
+      border-radius: 15px;
+      animation: fadeInUp 1s ease-out;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pedido-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pedido-info {
+    text-align: center;
+  }
+
+  .pedido-image {
+    display: none;
+  }
+}

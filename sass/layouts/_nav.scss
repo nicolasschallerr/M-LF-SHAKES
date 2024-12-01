@@ -1,0 +1,22 @@
+.nav-bar {
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+
+    a {
+      font-family: "Impact", "Arial Black", sans-serif;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: $secondary-color;
+      font-weight: bold;
+
+      &:hover {
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}

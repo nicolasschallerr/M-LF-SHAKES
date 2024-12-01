@@ -1,0 +1,74 @@
+.card {
+  border: 4px solid #b73b52; // Borde rojo y grueso
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px; // Espacio superior para separar las cards de la imagen/texto
+
+  &:hover {
+    transform: translateY(-10px); // Efecto de elevación al pasar el ratón
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    background-color: $background-color;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+
+    h5.card-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #b73b52; // Rojo para el título
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    p.card-text {
+      font-size: 1.2rem;
+      color: #333;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+
+    button {
+      background-color: $primary-color;
+      color: $background-color;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+
+.card {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

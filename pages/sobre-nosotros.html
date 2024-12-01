@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conoce nuestra historia, misión y visión. En nuestra hamburguesería infantil nos dedicamos a ofrecer hamburguesas deliciosas y saludables para niños, siempre con ingredientes frescos y de calidad."
+    />
+    <meta
+      name="keywords"
+      content="acerca de hamburguesería, historia hamburguesería infantil, misión hamburguesería, hamburguesas frescas para niños, hamburguesas saludables, compromiso con la calidad, comida para niños"
+    />
+    <meta name="author" content="M**LF SHAKES" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Nunito Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--Boostrap Icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!--FavIcon-->
+    <link rel="icon" href="../assets/MLF SHAKES.png" type="image/x-icon" />
+
+    <title>Sobre Nosotros - Hamburguesería Infantil | M**LF SHAKES</title>
+    <!--sass-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--js-->
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Logo de la empresa -->
+      <div class="logo">
+        <a href="#index.html">
+          <img src="../assets/MLF SHAKES.png" alt="logo-empresa" />
+        </a>
+        <!-- Nombre de la empresa -->
+        <div class="brand-name">
+          <h1>M**LF SHAKES BURGERS</h1>
+        </div>
+      </div>
+      <!-- Secciones de la página -->
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/servicio.html">Servicios</a></li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+          <li><a href="../pages/sobre-nosotros.html">Nosotros</a></li>
+          <li><a href="../pages/pedidos-online.html">Realiza tu Pedido</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botones en el navbar -->
+      <div class="buttons">
+        <i class="bi bi-person-circle" id="loginIcon"></i>
+        <i class="bi bi-search" id="search-icon"></i>
+      </div>
+
+      <!-- Modal para iniciar sesión -->
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Iniciar Sesión</h2>
+          <form id="loginForm">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required />
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required />
+            <button type="submit">Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Modal para buscar Hamburguesas -->
+      <div class="modal" id="search-modal">
+        <div class="modal-content">
+          <span class="close" id="close-modal">&times;</span>
+          <h2>Buscar Hamburguesas</h2>
+          <form id="search-form">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Escribe el nombre de la hamburguesa..."
+            />
+            <button type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <div class="contenido">
+          <img src="../assets/team.jpeg" alt="Nuestro equipo" />
+          <div class="texto">
+            <p>
+              Somos una hamburguesería que combina diversión, calidad e
+              innovación. Desde el primer día, nuestra misión ha sido brindar
+              experiencias únicas para toda la familia. ¡Ven y descubre por qué
+              somos los favoritos de todos!
+            </p>
+            <ul>
+              <li>🍔 Las mejores hamburguesas personalizadas.</li>
+              <li>👨‍👩‍👧‍👦 Un ambiente familiar y lleno de alegría.</li>
+              <li>🏆 Comprometidos con la calidad y el servicio.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-left">
+        <p>&copy; 2024 M**LF Shakes. Todos los derechos reservados.</p>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/servicio.html">Servicios</a></li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+          <li><a href="../pages/sobre-nosotros.html">Nosotros</a></li>
+          <li><a href="../pages/pedidos-online.html">Realiza tu Pedido</a></li>
+        </ul>
+      </nav>
+      <div class="footer-right">
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-telephone"></i>
+      </div>
+    </footer>
+  </body>
+</html>

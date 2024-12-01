@@ -1,0 +1,15 @@
+.buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  .bi {
+    font-size: 1.5rem;
+    color: $primary-color;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

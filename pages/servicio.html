@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre todos los servicios que ofrecemos en nuestra hamburguesería infantil. Desde eventos especiales hasta servicio a domicilio, brindamos la mejor experiencia gastronómica para ti y tus hijos."
+    />
+    <meta
+      name="keywords"
+      content="servicios hamburguesería infantil, eventos para niños, servicio a domicilio hamburguesas, comida para niños, fiestas infantiles, catering hamburguesas, servicio a domicilio para familias"
+    />
+    <meta name="author" content="M**LF SHAKES" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Nunito Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--Boostrap Icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!--FavIcon-->
+    <link rel="icon" href="../assets/MLF SHAKES.png" type="image/x-icon" />
+
+    <title>Servicios - Hamburguesería Infantil | M**LF SHAKES</title>
+    <!--sass-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--js-->
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Logo de la empresa -->
+      <div class="logo">
+        <a href="#index.html">
+          <img src="../assets/MLF SHAKES.png" alt="logo-empresa" />
+        </a>
+        <!-- Nombre de la empresa -->
+        <div class="brand-name">
+          <h1>M**LF SHAKES BURGERS</h1>
+        </div>
+      </div>
+      <!-- Secciones de la página -->
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/servicio.html">Servicios</a></li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+          <li><a href="../pages/sobre-nosotros.html">Nosotros</a></li>
+          <li><a href="../pages/pedidos-online.html">Realiza tu Pedido</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botones en el navbar -->
+      <div class="buttons">
+        <i class="bi bi-person-circle" id="loginIcon"></i>
+        <i class="bi bi-search" id="search-icon"></i>
+      </div>
+
+      <!-- Modal para iniciar sesión -->
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Iniciar Sesión</h2>
+          <form id="loginForm">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required />
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required />
+            <button type="submit">Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Modal para buscar Hamburguesas -->
+      <div class="modal" id="search-modal">
+        <div class="modal-content">
+          <span class="close" id="close-modal">&times;</span>
+          <h2>Buscar Hamburguesas</h2>
+          <form id="search-form">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Escribe el nombre de la hamburguesa..."
+            />
+            <button type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="services">
+        <h2>Servicios</h2>
+        <div class="service-container">
+          <div class="service-item">
+            <img src="../assets/personal.jpeg" alt="Servicio 1" />
+            <h3>Personal Amable</h3>
+            <p>
+              "En MLF Shakes, contamos con un equipo de colaboradores siempre
+              dispuesto a brindar la mejor atención. Nos esforzamos por
+              ofrecerte una experiencia única, asegurándonos de que te sientas
+              bienvenido y satisfecho con cada visita."
+            </p>
+          </div>
+          <div class="service-item">
+            <img src="../assets/frescos.avif" alt="Servicio 2" />
+            <h3>Productos Frescos</h3>
+            <p>
+              "Utilizamos solo ingredientes frescos y de la mejor calidad para
+              preparar nuestros productos. Nos comprometemos a ofrecerte siempre
+              lo mejor, asegurándonos de que cada sabor sea delicioso y
+              saludable."
+            </p>
+          </div>
+          <div class="service-item">
+            <img src="../assets/rapida.jpeg" alt="Servicio 3" />
+            <h3>Entregas Rapidas</h3>
+            <p>
+              "Sabemos que tu tiempo es valioso. Por eso, trabajamos para
+              ofrecerte un servicio rápido y eficiente, asegurándonos de que tu
+              pedido llegue a ti lo antes posible sin sacrificar la calidad."
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-left">
+        <p>&copy; 2024 M**LF Shakes. Todos los derechos reservados.</p>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/servicio.html">Servicios</a></li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+          <li><a href="../pages/sobre-nosotros.html">Nosotros</a></li>
+          <li><a href="../pages/pedidos-online.html">Realiza tu Pedido</a></li>
+        </ul>
+      </nav>
+      <div class="footer-right">
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-telephone"></i>
+      </div>
+    </footer>
+  </body>
+</html>

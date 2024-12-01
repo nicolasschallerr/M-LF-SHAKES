@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: $font-family;
+  color: $font-color;
+  background: linear-gradient(
+    135deg,
+    $background-color-fondo,
+    $secondary-color-fondo
+  );
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  margin: 0;
+}

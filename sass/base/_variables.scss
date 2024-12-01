@@ -1,0 +1,32 @@
+// Colores Primarios
+$primary-color: #ff5733;
+$secondary-color: #f1df3be2;
+$highlight-color: #81c784;
+$accent-color: #ff7043;
+
+//Fondo pagina
+$background-color-fondo: #ffedcb; // Verde claro y suave (fondo)
+$primary-color-fondo: #ff9f1c; // Amarillo pastel para detalles y botones
+$secondary-color-fondo: #ff6f61; // Verde pastel para complementos y elementos interactivos
+
+// Colores para fondo y texto
+$background-color: #fff8e1;
+$text-color: #333333;
+
+// Colores de íconos
+$icon-color: #42a5f5;
+$icon-hover-color: #d32f2f;
+
+// Tipografía
+$font-family: "Nunito", sans-serif;
+$font-color: #333;
+
+input {
+  font-family: "Nunito", sans-serif;
+  &::placeholder {
+    font-family: "Nunito", sans-serif;
+    color: #999;
+    font-size: 1rem;
+    font-style: italic;
+  }
+}

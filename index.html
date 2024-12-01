@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descubre las mejores hamburguesas para niños en nuestra hamburguesería infantil. Menú variado, sabores deliciosos y un ambiente divertido para toda la familia. ¡Ven a disfrutar con tus pequeños!">
+    <meta name="keywords" content="hamburguesas para niños, hamburguesería infantil, comida para niños, menú infantil, hamburguesas deliciosas, hamburguesas saludables, comida familiar, hamburguesas para toda la familia, hamburguesas con queso, hamburguesas divertidas">
+    <meta name="author" content="M**LF SHAKES">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nunito Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--Boostrap Icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!--FavIcon-->
+    <link rel="icon" href="assets/MLF SHAKES.png" type="image/x-icon" />
+
+    <title>Hamburguesería Infantil - Deliciosas Hamburguesas para Niños | M**LF SHAKES</title></title>
+    <!--sass-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--js-->
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Logo de la empresa -->
+      <div class="logo">
+        <a href="#index.html">
+          <img src="assets/MLF SHAKES.png" alt="logo-empresa" />
+        </a>
+        <!-- Nombre de la empresa -->
+        <div class="brand-name">
+          <h1>M**LF SHAKES BURGUERS</h1>
+        </div>
+      </div>
+      <!-- Secciones de la página -->
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/servicio.html">Servicios</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><a href="./pages/sobre-nosotros.html">Nosotros</a></li>
+          <li><a href="./pages/pedidos-online.html">Realiza tu Pedido</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botones en el navbar -->
+      <div class="buttons">
+        <i class="bi bi-person-circle" id="loginIcon"></i>
+        <i class="bi bi-search" id="search-icon"></i>
+      </div>
+
+      <!-- Modal para iniciar sesión -->
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Iniciar Sesión</h2>
+          <form id="loginForm">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required />
+            <label fore="password" id="password" name="password" required />
+            <button ty="password">Contraseña:</label>
+            <input typpe="submit">Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Modal para buscar Hamburguesas -->
+      <div class="modal" id="search-modal">
+        <div class="modal-content">
+          <span class="close" id="close-modal">&times;</span>
+          <h2>Buscar Hamburguesas</h2>
+          <form id="search-form">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Escribe el nombre de la hamburguesa..."
+            />
+            <button type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="best-burgers">
+        <div class="image-container">
+          <img src="assets/portada.webp" alt="Hamburguesa" />
+        </div>
+        <div class="text-container">
+          <h2>Las mejores hamburguesas</h2>
+          <p>
+            Descubre una experiencia única con nuestras deliciosas hamburguesas
+            hechas con los mejores ingredientes.
+          </p>
+        </div>
+      </section>
+      <section class="burger-cards">
+        <div class="container">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img
+                  src="../assets/burger-clasica.webpg.webp"
+                  class="card-img-top"
+                  alt="Hamburguesa 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CLASIC</h5>
+                  <p class="card-text">
+                    Hamburguesa con carne, lechuga fresca, tomate y salsa
+                    especial.
+                  </p>
+                  <button class="btn btn-primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img
+                  src="../assets/burger-bbq.jpeg.jpg"
+                  class="card-img-top"
+                  alt="Hamburguesa 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BBQ</h5>
+                  <p class="card-text">
+                    Hamburguesa con salsa barbacoa, bacon crujiente y cebolla
+                    caramelizada.
+                  </p>
+                  <button class="btn btn-primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img
+                  src="../assets/burger-picante.avif"
+                  class="card-img-top"
+                  alt="Hamburguesa 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">HOT BURGER</h5>
+                  <p class="card-text">
+                    Una hamburguesa para los amantes del picante con jalapeños y
+                    salsa de chipotle.
+                  </p>
+                  <button class="btn btn-primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img
+                  src="../assets/hamburguesa-vegana.jpeg"
+                  class="card-img-top"
+                  alt="Hamburguesa 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">VEGGIE</h5>
+                  <p class="card-text">
+                    hamburguesa vegetal, acompañada de aguacate y mayonesa
+                    vegana.
+                  </p>
+                  <button class="btn btn-primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img
+                  src="../assets/burger-gourmet.webp"
+                  class="card-img-top"
+                  alt="Hamburguesa 5"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">GOURMET</h5>
+                  <p class="card-text">
+                    Con queso cheddar maduro y una salsa secreta gourmet.
+                  </p>
+                  <button class="btn btn-primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img
+                  src="../assets/burger-deluxe.jpeg"
+                  class="card-img-top"
+                  alt="Hamburguesa 6"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">DELUXE</h5>
+                  <p class="card-text">
+                    La mejor combinación de carne, queso, bacon y huevo frito.
+                  </p>
+                  <button class="btn btn-primary">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pedido-online">
+        <div class="container">
+          <h2>Haz tu Pedido Online</h2>
+          <p>
+            Disfruta de nuestras deliciosas hamburguesas desde la comodidad de
+            tu casa. Haz tu pedido ahora y ¡te lo llevamos hasta tu puerta!
+          </p>
+          <a href="#pedido" class="btn-pedido">Realizar Pedido</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-left">
+        <p>&copy; 2024 M**LF Shakes. Todos los derechos reservados.</p>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/servicio.html">Servicios</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><a href="./pages/sobre-nosotros.html">Nosotros</a></li>
+          <li><a href="./pages/pedidos-online.html">Realiza tu Pedido</a></li>
+        </ul>
+      </nav>
+      <div class="footer-right">
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-telephone"></i>
+      </div>
+    </footer>
+  </body>
+</html>

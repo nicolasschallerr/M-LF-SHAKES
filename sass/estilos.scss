@@ -1,0 +1,21 @@
+// Base
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/typography";
+
+// Components
+@import "./components/header";
+@import "./components/modal";
+@import "./components/buttons";
+@import "./components/main";
+@import "./components/burger-card";
+@import "./components/Pedidos";
+@import "./components/footer";
+@import "./components/contacto";
+@import "./components/servicio";
+@import "./components/sobre-nosotros";
+@import "./components/pedidos-online";
+
+// Layouts
+@import "./layouts/nav";
+@import "./layouts/responsive";

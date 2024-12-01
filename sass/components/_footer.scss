@@ -1,0 +1,88 @@
+footer {
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+
+  .footer-left {
+    p {
+      font-size: 1rem;
+      color: $secondary-color;
+      animation: fadeInLeft 1s ease-out;
+    }
+  }
+
+  .nav-bar {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+
+      li {
+        display: inline-block;
+
+        a {
+          color: $secondary-color;
+          text-decoration: none;
+          font-size: 1rem;
+          transition: all 0.3s ease;
+          font-family: "Nunito", sans-serif;
+
+          &:hover {
+            color: $highlight-color;
+            transform: scale(1.1);
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    i {
+      font-size: 2rem;
+      color: $secondary-color;
+      transition: transform 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+        color: $highlight-color;
+      }
+
+      &:first-child {
+        color: #25d366;
+      }
+
+      &:last-child {
+        color: #007bff;
+      }
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  background: linear-gradient(135deg, $primary-color $highlight-color);
+}

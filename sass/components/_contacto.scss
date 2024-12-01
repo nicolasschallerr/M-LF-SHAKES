@@ -1,0 +1,83 @@
+.contacto {
+  background: linear-gradient(135deg, $highlight-color, $secondary-color);
+  color: $background-color;
+  padding: 60px;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .formulario {
+    margin: 0 auto;
+    max-width: 500px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input,
+      textarea {
+        padding: 12px;
+        border: 2px solid $highlight-color;
+        border-radius: 8px;
+      }
+
+      button {
+        background-color: $primary-color;
+        color: $background-color;
+        padding: 12px;
+        border-radius: 8px;
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .redes {
+    text-align: center;
+    margin-top: 30px;
+
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: $secondary-color;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    i {
+      font-size: 2rem;
+      margin: 0 15px;
+      color: $primary-color;
+      transition: transform 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+        color: $highlight-color;
+      }
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
